@@ -1,0 +1,60 @@
+<!-- Estrutura html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 2-Editar a estrutura padrão: titúlo,css,icone -->
+    <link rel="icon" href="./img/FAVICON.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/estilo.css">
+<!-- Fonte League spartan -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Login</title>
+</head>
+<body>
+    <!-- 3-Criar a DIV e o FORM - body{} -->
+        
+        <div class="header">
+            <img src="./img/LOGASSA.png" alt="logo streparava" width="150px">
+        </div>
+        <!-- Criar formulário -->
+        <!-- 3.1 -3.2 inputs e button -->
+
+
+    <div class="login-container">
+        <div class="bordaLogin">
+    <div class="login" id="caixaLogin">
+        <h2>LOGIN</h2>
+        <form id="loginForm">
+            <input type="text" placeholder="Nome" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit" class="submit-btn">Entrar</button>
+        </form>
+    </div>
+
+    <script>
+        const loginBlock = document.getElementById('caixaLogin');
+    const loginForm = document.getElementById('loginForm');
+
+    loginBlock.addEventListener('click', () => {
+        // só adiciona as classes se ainda não estiver aberto
+        if (!loginBlock.classList.contains('expanded')) {
+            loginBlock.classList.add('expanded');
+            loginForm.classList.add('active');
+        }
+    });
+    </script>
+
+
+</body>
+
+
+
+
+
+
+
+</html>
