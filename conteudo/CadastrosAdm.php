@@ -24,12 +24,12 @@
       $(document).ready(function() {
         // Botão Cadastro de Usuário
         $('#btnCadUsuario').click(function() {
-    $('#conteudoCadastro').load('/Projetos/ProjetoStreparava-main/ProjetoStreparava-main/Streparava/conteudo/conteudoCadAdm/CadUsuario.php', function(response, status, xhr) {
-        if (status == "error") {
-            $('#conteudoCadastro').html('<p>Erro ao carregar Cadastro de usuario </p>');
-        }
-    });
-});
+            $('#conteudoCadastro').load('conteudo/conteudoCadAdm/CadUsuario.php', function(response, status, xhr) {
+                if (status == "error") {
+                    $('#conteudoCadastro').html('<p>Erro ao carregar Cadastro de usuário</p>');
+                }
+            });
+        });
     });
     </script>
 
